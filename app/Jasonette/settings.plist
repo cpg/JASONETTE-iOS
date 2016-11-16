@@ -7,6 +7,10 @@
 	<key>client_secret</key>
 	<string></string>
 	<key>url</key>
+	<string>http://cpg-mbp-wired.amahi.net:3000/stringing/mobile/rackets.json</string>
+	<key>url-original</key>
 	<string>https://jasonette.github.io/Jasonpedia/hello.json</string>
+	<key>url-dev</key>
+	<string>http://cpg-mbp-wired.amahi.net:3000/stringing/mobile/rackets.json</string>
 </dict>
 </plist>

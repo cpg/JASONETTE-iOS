@@ -6,6 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Jasonette-Swift.h"
 #import "RussianDollView.h"
 #import "REMenu.h"
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -19,6 +20,7 @@
 #import <NSHash/NSString+NSHash.h>
 #import <FreeStreamer/FSAudioStream.h>
 #import <PBJVision/PBJVision.h>
+
 @import MediaPlayer;
 
 @interface Jason : NSObject <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITabBarControllerDelegate, PBJVisionDelegate>

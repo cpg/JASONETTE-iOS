@@ -1849,6 +1849,26 @@
                 [navigationController presentViewController:vc animated:YES completion:^{ }];
                 
             }
+        } else if ([view.lowercaseString isEqualToString:@"webview"]){
+            /***************************************
+             *
+             * WebView using WKViewController
+             *
+             ***************************************/
+            NSString *encoded_url = [JasonHelper linkify:href[@"url"]];
+            // NSURL *URL = [NSURL URLWithString:encoded_url];
+            [self unlock];
+            JasonWebviewController *vc = [[JasonWebviewController alloc] init];
+            vc.url = encoded_url;
+            
+            if([transition isEqualToString:@"modal"]){
+                UINavigationController *newNav = [[UINavigationController alloc]initWithRootViewController:vc];
+                [newNav setNavigationBarHidden:YES animated:NO];
+                [navigationController presentViewController:newNav animated:YES completion:^{ }];
+            } else {
+                [navigationController presentViewController:vc animated:YES completion:^{ }];
+                
+            }
         } else if ([view.lowercaseString isEqualToString:@"app"] || [view.lowercaseString isEqualToString:@"external"]){
             /****************************************************************************
              *
